@@ -1,0 +1,240 @@
+/* reset style */
+*{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;margin: 0;-webkit-touch-callout: none;-webkit-user-select: none;-webkit-tap-highlight-color: transparent;}
+body,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,p,form,input,button{margin:0;padding:0;}
+body,button,input,textarea{color:#333;font: 14px/1.4 Arial, 微软雅黑;}
+h1,h2,h3,h4,h5,h6 { font-weight: normal;}
+input{outline:0 none;}
+img,input{border:none;}
+img{max-width: 100%;vertical-align: top;}
+ul, ol{list-style:none;}
+i{font-style:normal;}
+button,input[type="button"],input[type='submit']{cursor:pointer;}
+a{color:#222;text-decoration: none;cursor:pointer;}
+a:focus,button:focus,input:focus {outline:0}
+
+/* 定义各浏览器输入框placeholder的样式（已基本调整一致） */
+input:input-placeholder,
+textarea:input-placeholder,
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder{
+color:#e6e6e6;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+input::-moz-placeholder,
+textarea::-moz-placeholder{
+color: #999;
+}
+
+/* 清除谷歌自输入框样式 */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+-webkit-box-shadow: 0 0 0 1000px #fff inset;
+}
+
+ /* block */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+display: block;
+}
+
+ /* inline-block */
+audio,
+canvas,
+progress,
+video {
+display: inline-block;
+}
+
+ /* svg */
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+ /* position */
+.rel{position:relative;}
+.abs{position:absolute;}
+
+ /* float */
+.fl{float:left;}
+.fr{float:right;}
+
+ /* display */
+.dpn{display:none;}
+.dpi{display:inline;}
+.dpb{display:block;}
+.dpib{display:inline-block;}
+.dptc{display:table-cell;}
+.vam{vertical-align: middle;}
+
+ /* widthpercent */
+.wp20{width:20%;}
+.wp30{width:30%;}
+.wp40{width:40%;}
+.wp50{width:50%;}
+.wp60{width:60%;}
+.wp70{width:70%;}
+.wp80{width:80%;}
+.wp100{width:100%;}
+
+ /* color */
+.cf{color:#fff;}
+.cf85{color:#D9D9D9;}
+.cf75{color:#BFBFBF;}
+.cf65{color:#A6A6A6;}
+.cf55{color:#8C8C8C;}
+.cf45{color:#737373;}
+.cf25{color:#404040;}
+.cf20{color:#333333;}
+.cf15{color:#262626;}
+.cf10{color:#1A1A1A;}
+.cf5{color:#0D0D0D;}
+.c0{color:#000;}
+.c085{color:#262626;}
+.c075{color:#404040;}
+.c065{color:#595959;}
+.c055{color:#737373;}
+.c045{color:#8C8C8C;}
+.c025{color:#BFBFBF;}
+.c020{color:#CCCCCC;}
+.c015{color:#D9D9D9;}
+.c010{color:#E6E6E6;}
+.c05{color:#F2F2F2;}
+.cc{color:#ccc;}
+.c9{color:#999;}
+.c6{color:#666;}
+.c3{color:#333;}
+.cyellow{color:#F3B133;}
+.cyellow_w{color:#f39231;}
+.cbrown{color:#543F21;}
+.cbrownl{color:#F0D490;}
+.cbrown_l{color:#FFF9EA;	}
+.cgreen{color:#1CCFAA;}
+.cblue{color:#2177CE;}
+.cblue_l{color:#5A98FF;}
+.cred{color:#FF5029;}
+.cpink{color: #F74D71;}
+.cwarm{color:#F3C933;}
+.cyellowgra{color:transparent;background:#fff linear-gradient(to right,#f3b133,#f38c31);background-image:linear-gradient(to right,#f3b133,#f38c31);background-clip:border-box;-webkit-background-clip:text;}
+.cbrowngra{color:transparent;background:#fff linear-gradient(to right,#F0D490,#D1A67B);background-image:linear-gradient(to right,#F0D490,#D1A67B);background-clip:border-box;-webkit-background-clip:text;}
+
+
+ /* bg-color */
+.bgf{background-color:#fff;}
+.bg0{background-color:#000;}
+.bg3{background-color:#333;}
+.bgfb{background-color:#fbfbfb;}
+.bg40{background-color:#404040;}
+.bgf5{background-color:#f5f5f5;}
+.bgf0{background-color:#f0f0f0;}
+.bgeb{background-color:#ebebeb;}
+.bge0{background-color:#e0e0e0;}
+.bg26{background-color:#262626;}
+.bgyellow{background-color:#F3B133;}
+.bgorange{background-color:#F37833;}
+.bgbrown{background-color:#543F21;}
+.bggreen{background-color:#1CCFAA;}
+.bgred{background-color:#FF5029;}
+.bgyellowgra{background-image:linear-gradient(to right,#f3b133,#f38c31);}
+.bgbrowngra{background-image:linear-gradient(to right,#F0D490,#D1A67B);}
+.bgbluegra{background-image:linear-gradient(to right,#93BEFF,#458EFF);}
+.bgpinkgra{background-image:linear-gradient(to right,#FF8F80,#FF3F5F);}
+
+ /* font-style */
+.n{font-weight:normal; font-style:normal;}
+.b{font-weight:bold;}
+
+ /* text-align */
+.tac{text-align:center;}
+.tar{text-align:right;}
+.tal{text-align:left;}
+.clearfix {zoom: 1;}
+.clearfix:after{content: ".";display: block;height: 0; clear: both;visibility: hidden;}
+
+ /* flex */
+.flx{display:-webkit-box;display:-webkit-flex;display:flex;}
+
+ /* flex 0 0 auto */
+ .f-0-a{flex: 0 0 auto;}
+
+  /* flex 1 */
+  .f-1{flex: 1;}
+
+ /* justify center */
+.j-c{justify-content: center;-webkit-justify-content: center;}
+
+ /* justify center */
+.j-s{justify-content: space-between;-webkit-justify-content: space-between;}
+
+ /* align-items center */
+.a-c{align-items:center;-webkit-align-items:center;}
+
+ /* flex-direction  column */
+.f-c{flex-direction: column;-webkit-flex-direction: column;}
+
+ /* flex-direction  column */
+ .f-w{flex-wrap: wrap;-webkit-flex-wrap: wrap;}
+
+ /* align-content  space-between; */
+ .a-s{align-content: space-between;-webkit-align-content: space-between;}
+
+ /* center */
+.m0a{margin-right: auto;margin-left: auto;}
+
+ /* line feed */
+.wbb{word-break: break-all; word-wrap:break-word;}
+
+ /* single line ... */
+.ell{text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+
+ /* 2 line ... */
+.clp{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;}
+
+ /* loading */
+.loading{position: relative;}
+.loading::before{content:'loading...';font-size: 0.24rem;color: #8C8C8C;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
+
+ /* absolute center middle */
+.acm{position:absolute;top:50%;left:50%;transform: translate(-50%,-50%)}
+
+ /* letter spacing */
+.ls3{letter-spacing: 3px;}
+
+ /* z-inde */
+.bgop{opacity: .5;background: #000;-moz-opacity: .50;filter: alpha(opacity=50)}
+.zi1{z-index: 1;}
+.zi2{z-index: 2;}
+.zi3{z-index: 3;}
+.zi4{z-index: 4;}
+.zi5{z-index: 5;}
+.zi9{z-index: 9;}
+.zi10{z-index: 10;}
+.zi99{z-index: 99;}
+.zi100{z-index: 100;}
+.zi999{z-index: 999;}
+.zi1000{z-index: 1000;}
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -.15em;
+  fill: currentColor;
+  overflow: hidden;
+}

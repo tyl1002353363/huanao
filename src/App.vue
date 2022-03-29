@@ -11,13 +11,13 @@ export default {
 </script>
 
 <style>
+@import './assets/css/reset.css';
 html, html body {
-  margin: 0;
   height: 100%;
 }
 
 #app {
-  height: 100%;
+  min-height: 100%;
   font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Segoe UI,Arial,Roboto,PingFang SC,miui,Hiragino Sans GB,Microsoft Yahei,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
